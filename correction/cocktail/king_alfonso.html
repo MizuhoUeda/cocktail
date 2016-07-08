@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>カクテルメーカー</title>
+<meta charset=utf-8 />
+<link rel='stylesheet' href='../../css/sp.css' />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<!-- jqueryセット -->
+<link href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript" ></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js" type="text/javascript"></script>  
+    
+<script type="text/javascript">
+$(function() {
+  // 2button／buttonsetメソッドでボタンに整形
+  $('button').button();
+  $('.button').button();
+});
+</script>    
+
+<script type="text/javascript">
+$(document).ready(function(){ // ページを更新されてポイント受け取りされることへの対策
+        var received = localStorage.getItem("received1");
+        if(received != null){
+        $("#poinyo").css("display", "none");
+        }
+});    
+    
+function stage9open(){
+// ローカルストレージに保存する
+        var stage9cookie = 'stage9/stage9.html';
+
+        localStorage.setItem("openstage9", stage9cookie); // ステージ2を解禁
+        var cassisorange = "html/king_alfonso.html"
+        localStorage.setItem("cocktail9", king_alfonso); // 基本報酬のレシピ
+                             
+        
+        alert("コレクションに“キング・アルフォンソ”が追加されました！")
+}
+    
+
+    
+function cookiesakujo(){
+        localStorage.removeItem("openstage5");
+        alert("クッキーを削除しました");
+}
+    
+</script>
+
+
+</head>
+    
+<body>
+<!-- contents -->
+<div class="main">
+    <link rel="stylesheet" type="text/css" href="../../css/default.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/component.css" />
+		<script src="../../js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">	
+			<!-- Codrops top bar -->
+			
+			<div class="os-phrases" id="os-phrases">
+				<h2>完<span> </span>成</h2>
+				
+			</div>
+		</div><!-- /container -->
+		<script src="../../js/jquery.lettering.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("#os-phrases > h2").lettering('words').children("span").lettering().children("span").lettering(); 
+			})
+		</script>
+
+	<!-- 完成画面 -->
+        <div>
+        <img id="shakeimg" src="../../img/king_alfonso.png" width="320px" height="450px">
+        </div>
+        <div class="shousai">
+            < <h2 style="color:orange;" >キング・アルフォンソ</h2>
+            <h3>・材料</h3>
+            <li class="resipi">クレーム・ド・カカオ・ブラウン
+45</li>
+            <li class="resipi">クレーム・ド・カカオ・ブラウン
+45</li>
+            <h3>・作り方<h3>
+            <ol>
+                <li>にクレーム・ド・カカオを注ぎ、生クリームを静かにフロートにする</li>
+
+            
+            </ol>
+               
+            
+            <p>甘くて女性好みのチョコレート味のカクテル</p>
+        </div>
+        
+        <div>
+        <span id="output"></span>
+        <br>
+        <button onclick="stage2open()" id="poinyo">報酬を受け取る</button><br><br>
+         <a href="../../correction/correction.html" class="button">今まで作ったカクテルは<br>ここから！</a><br><br>
+        <a href="../select.html" class="button">ステージ選択に戻る</a><br><br>
+        <a href="../../index.html" class="button">TOPに戻る</a>
+        </div>
+</body>
+</html>

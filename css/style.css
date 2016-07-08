@@ -1,0 +1,248 @@
+@import 'https://fonts.googleapis.com/css?family=VT323';
+
+body {
+	background-color: black;
+	font-family:'VT323',monospace;
+	align-content:center;
+}
+
+#main {
+	align-content:center;
+}
+
+.mainshake {
+	font-family:'VT323',monospace;
+	background-color: black;
+}
+
+.title {
+	font-size:25vw;
+	color:#fff;
+	align-content:center;
+}
+
+.menu {
+	font-size:10vw;
+	color:black;
+}
+
+.day {
+	font-size:20vw;
+	color:#fff;
+	border: whitev solid 1px;
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:visited {
+	color: white;
+}
+/* modal*/
+.selectSake {
+	z-index:0;
+}
+
+#modal1 {
+	display:none;
+	width:700px;
+	height:700px;
+	margin:0;
+	padding:0;
+	padding-top:0;
+	background-color:grey;
+	color:white;
+	text-align: center;
+	font-size: 60px;
+	font-family:'VT323',monospace;
+	position:fixed;
+	z-index:3;
+}
+
+#modal2 {
+	display:none;
+	width:700px;
+	height:700px;
+	margin:0;
+	padding:0;
+	background-color:grey;
+	color:white;
+	text-align: center;
+	font-size: 60px;
+	font-family:'VT323',monospace;
+	position:fixed;
+	color:#fff;
+	position:fixed;
+	z-index:3;
+}
+
+#modal3 {
+	display:none;
+	width:700px;
+	height:700px;
+	margin:0;
+	padding:0;
+	background-color:grey;
+	color:white;
+	text-align: center;
+	font-size: 60px;
+	font-family:'VT323',monospace;
+	position:fixed;
+	color:#fff;
+	position:fixed;
+	z-index:3;
+}
+
+#modal-bg {
+	display:none;
+	width:100%;
+	height:130%;
+	background-color:rgba(0,0,0,0.5);
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:2;
+}
+
+.next {
+	margin-top: 80px;
+	color:black;
+	border-color: white;
+	background-color: white;
+	text-align: center;
+	
+}
+
+/*modal終わり*/
+.selectSake h2 {
+	margin-top:20%;
+	text-align:center;
+	font-size:125px;
+	font-family:'VT323',monospace;
+	color:#fff;
+}
+
+.selectSake ul {
+	margin-top:30%;
+	display:table;
+}
+
+.selectSake ul li {
+	display:table-cell;
+	vertical-align:middle;
+	padding:75px;
+}
+
+.sake {
+	width:200%;
+}
+
+#shake {
+	
+	color: yellow;
+	font-size: 50px;
+	
+}
+
+/*failed*/
+
+.failed {
+	color: white;
+}
+
+span {
+	color: white;
+}
+
+.button {
+	border: white solid 1px;
+}
+
+.debug{
+ 	height: 200px;
+     overflow: scroll;
+     background-color: #FFFFFF;
+     width: 80%;
+     display: block;
+     font-size: 10px;
+ }
+
+.debug p{
+	padding: 0;
+	margin: 0;
+	border-bottom: 1px solid gray;        
+}
+
+.count{
+	font-size: 200%;        
+}
+
+.countdown{
+     font-size: 200%;
+     color: white;
+}
+
+/*day*/
+.shousai{
+  border: 1px white solid;
+  font-family:'VT323',monospace;
+}
+
+.quest {
+	color: white;
+	font-family: 'VT323',monospace;
+}
+
+.hint {
+	color: white;
+	font-family: 'VT323',monospace;
+}
+
+/*comp*/
+
+.cong {
+	color: yellow;
+	font-size: 50px;
+	font-family: 'VT323',monospace;
+
+}
+
+.ans {
+	color: orange;
+	text-align: center;
+	font-size: 40px;
+}
+
+.resipe{
+    margin-left: 20px;
+    list-style-type: none;
+    color: white;
+    font-size: 20px;
+}
+
+.center {
+	text-align: center;
+}
+
+#shakeimg {
+	width: 50%;
+}
+
+.ing {
+	color: white;
+	text-align: center;
+	font-size: 25px;
+}
+
+.res {
+	color: white;
+	text-align: center;
+	font-size: 25px;
+}
+
+#about{
+    text-align: center;
+    color: white;
+    }

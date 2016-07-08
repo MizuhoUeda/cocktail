@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Cocktail Master</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/sp.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><!-- jqueryセット -->
+    <link href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" rel="stylesheet" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+		$(function() {
+		// 2button／buttonsetメソッドでボタンに整形
+			$('.button').button();
+    	});
+    </script>
+    
+    <script type="text/javascript">
+
+    	var shogo = {
+
+			a:-50,
+			shinjin:0,
+			minarai:50,
+			kakedashi:150,
+			ichininmae:300,
+			f:500,
+			g:850,
+			h:1500,
+			i:2500,
+			master:5000,
+			bacchus:10000
+
+    	};
+
+		var point = localStorage.getItem("point");
+
+		var tugi = 0;
+
+		$(function(){
+
+			if(point <= shogo['a']){
+
+				tugi = shogo['a'] - point;
+        
+				$("#shogo").text("やめとけ");
+				$("#tugi").text(tugi);
+    	}else if(shogo['a'] < point && point < shogo['shinjin']){
+
+        	tugi = shogo['shinjin'] - point;
+        
+			$("#shogo").text("ヘタクソ");
+			$("#tugi").text(tugi);
+
+    	}else if(shogo['shinjin'] <= point && point < shogo['minarai'] || isNaN(point == true)){
+
+        	tugi = shogo['minarai'] - point;
+
+			$("#shogo").text("新人バーテンダー");
+			$("#tugi").text(tugi);
+
+    	}else if(shogo['minarai'] <= point && point < shogo['kakedashi']){
+
+        	tugi = shogo['kakedashi'] - point;
+
+			$("#shogo").text("見習いバーテンダー");
+			$("#tugi").text(tugi);
+        
+    	}else if(shogo['kakedashi'] <= point && point < shogo['ichininmae']){
+
+        	tugi = shogo['ichininmae'] - point;
+        
+			$("#shogo").text("駆け出しバーテンダー");
+			$("#tugi").text(tugi);
+
+    	}else if(shogo['ichininmae'] <= point && point < shogo['f']){
+
+        	tugi = shogo['f'] - point;
+
+			$("#shogo").text("一人前のバーテンダー");
+			$("#tugi").text(tugi);
+        
+    	}else if(shogo['f'] <= point && point < shogo['g']){
+
+        	tugi = shogo['g'] - point;
+
+			$("#shogo").text("ききききき");
+			$("#tugi").text(tugi);
+        
+    	}else if(shogo['g'] <= point && point < shogo['h']){
+
+        	tugi = shogo['h'] - point;
+        
+			$("#shogo").text("くくくくく");
+			$("#tugi").text(tugi);
+        
+    	}else if(shogo['h'] <= point && point < shogo['i']){
+
+        	tugi = shogo['i'] - point;
+
+			$("#shogo").text("けけけけけ");
+			$("#tugi").text(tugi);
+        
+    	}else if(shogo['i'] <= point && point < shogo['master']){
+
+        	tugi = shogo['master'] - point;
+
+			$("#shogo").text("こここここ");
+			$("#tugi").text(tugi);
+
+    	}else if(shogo['master'] <= point && point < shogo['bacchus']){
+
+        	tugi = shogo['bacchus'] - point;
+        
+			$("#shogo").text("マスター");
+			$("#tugi").text(tugi);      
+    	}else if(shogo['bacchus'] <= point){
+        
+        	$("#shogo").text("BACCHUS");
+                
+    	}
+
+    });
+
+    </script>
+    
+    <script type="text/javascript">
+		$(function(){
+        
+		var stage1open = localStorage.getItem("openstage2")
+		if(stage1open != null){
+			$("#cocktail1").show();
+    	}
+
+		var stage2open = localStorage.getItem("openstage3")
+			if(stage2open != null){
+			$("#cocktail2").show();
+    	}
+
+		var stage3open = localStorage.getItem("openstage4")
+			if(stage3open != null){
+			$("#cocktail3").show();
+    	}
+
+		var stage4open = localStorage.getItem("openstage5")
+			if(stage4open != null){
+			$("#cocktail4").show();
+    	}
+
+		var stage5open = localStorage.getItem("openstage6")
+			if(stage5open != null){
+			$("#cocktail5").show();
+    	}
+
+		var stage6open = localStorage.getItem("openstage7")
+			if(stage6open != null){
+			$("#cocktail6").show();
+    	}
+
+		var stage7open = localStorage.getItem("openstage8")
+			if(stage7open != null){
+			$("#cocktail7").show();
+    	}
+
+		var stage8open = localStorage.getItem("openstage9")
+			if(stage8open != null){
+			$("#cocktail8").show();
+    	}
+
+		var stage9open = localStorage.getItem("openstage10")
+			if(stage9open != null){
+			$("#cocktail10").show();
+    	}
+
+		var stage11open = localStorage.getItem("newcocktail11")
+			if(stage11open != null){
+			$("#cocktail11").show();
+    	}
+
+
+    });
+    </script>
+    
+    <style type="text/css">
+		.left{
+        	float:left;
+    	}
+		.right{
+        	float: right;
+    	}
+		.clear{
+        	clear: both;
+    	}
+		.katagaki{
+        	text-align: center;
+    	}
+    </style>
+</head>
+
+<body>
+    <img src="../img/title2.png" width="320px" height="auto">
+    <hr>
+
+    <div class="left">
+        <p class="katagaki">現在の称号<br>
+        <span id="shogo"></span></p>
+    </div>
+
+    <div class="right">
+        <p class="katagaki">次の称号まであと<br>
+        <span id="tugi"></span>くらい</p>
+    </div>
+
+    <div class="clear"></div>
+    <hr>
+    <a href="../index.html" class="button">TOPへ戻る</a> 
+    <a href="../game/select.html" class="button">ステージ選択画面に戻る</a>
+    <a href="buy.html" class="button">買う</a>
+
+    <p>◯今までに作ったカクテル</p><br>
+    <a href="cocktail/cassisorange.html" id="cocktail1" class="button" style="display:none">カシスオレンジ</a><br>
+    <br>
+    <a href="cocktail/kahluamilk.html" id="cocktail2" class="button" style="display:none">カルーアミルク</a><br>
+    <br>
+    <a href="cocktail/screwdriver.html" id="cocktail3" class="button" style="display:none">スクリュードライバー</a><br>
+    <br>
+    <a href="cocktail/moscowmule.html" id="cocktail4" class="button" style="display:none">モスコミュール</a><br>
+    <br>
+
+    <div id="cocktail5" class="button" onclick="cocktail5link()" style="display:none">
+        レゲエパンチ
+    </div><br>
+    <br>
+
+    <div id="cocktail6" class="button" onclick="cocktail6link()" style="display:none">
+        クランベリーソーダ
+    </div><br>
+    <br>
+
+    <div id="cocktail7" class="button" onclick="cocktail7link()" style="display:none">
+        グラッドアイ
+    </div><br>
+    <br>
+
+    <div id="cocktail8" class="button" onclick="cocktail8link()" style="display:none">
+        ブラック・デビル
+    </div><br>
+    <br>
+
+    <div id="cocktail9" class="button" onclick="cocktail9link()" style="display:none">
+        キング・アルフォンソ
+    </div><br>
+    <br>
+
+    <div id="cocktail10" class="button" onclick="cocktail10link()" style="display:none">
+        スロー・テキーラ
+    </div><br>
+    <br>
+
+    <div id="cocktail11" class="button" onclick="cocktail11link()" style="display:none">
+        スロー・テキーラ
+    </div><br>
+    <br>
+</body>
+</html>
