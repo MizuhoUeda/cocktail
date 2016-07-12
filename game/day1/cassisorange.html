@@ -18,7 +18,7 @@
 		$(document).ready(function(){ // ページを更新されてポイント受け取りされることへの対策
         	var received = localStorage.getItem("received2");
 			if(received != null){
-				$("#point").css("display", "none");
+				$('#point').css('display', 'none');
 			}
     	});    
     </script>
@@ -59,11 +59,11 @@
 
         <div>
             <span id="output"></span><br>
-            <p onclick="day2open()" id="point">報酬を受け取る</p>
+            <p onclick="day2open()" id="point" class="button">Reward</p>
             
-            <a href="../select.html" class="button">ステージ選択に戻る</a><
+            <a href="../select.html" class="button">STAGE</a><
             <br>
-            <a href="../../index.html" class="button">TOPに戻る</a>
+            <a href="../../index.html" class="button">TOP</a>
         </div>
     </div>
 </body>
