@@ -1,29 +1,39 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="ja">
 <head>
-<title>カクテルメーカー</title>
-<meta charset=utf-8 />
-<link rel='stylesheet' href='../../css/sp.css' />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-<!-- jqueryセット -->
-<link href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript" ></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js" type="text/javascript"></script>  
-    
+    <meta charset="UTF-8">
 
-     <script type="text/javascript">
-$(function() {
-  // 2button／buttonsetメソッドでボタンに整形
-  $('button').button();
-        
-});
-         
+    <title>Cocktail Master</title>
+    <link rel="stylesheet" href="../../css/style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><!-- jqueryセット -->
+    <link href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" rel="stylesheet" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="../../js/jquery.split.js" type="text/javascript"></script>
+    <script type="text/javascript">
+	    $(window).load(function(){
+		   // 判定閾値
+		   var max = 10;
+		   var min = 30;
+		 
+		   localStorage.setItem("max",max);
+		   localStorage.setItem("min",min);
+		    
+	    });
+    </script>
 
-</script>  
-    </head>
-    <body>
-    <a href="s4osake.html"><img src=../../img/dounyu.png width="320px" height="auto"></a>
-    
- 
+</head>
+
+<body>
+   <img src="../../img/msbarten.png"><br>
+
+     <a href="t1osake.html">
+	    <div class="shousai">
+        	<h2 class="quest">Welcome to the tournament!!!</h2>
+
+			<p class="split">In the tournament, making a cocktail, you compete with others
+     	</div>
+    </a>
 </body>
 </html>
