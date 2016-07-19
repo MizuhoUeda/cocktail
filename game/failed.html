@@ -13,10 +13,7 @@
 
 <script type="text/javascript">
 $(function() {
-  // 2button／buttonsetメソッドでボタンに整形
-  $('button').button();
-  $('.button').button();
-  
+	  
 var wdame = localStorage.getItem("waridame");
 if(wdame != null){
     $("#waridame").show();
@@ -42,7 +39,7 @@ if(adame != null){
 <body>
     <h1 class="failed">Failed</h1><br>
     <span id="waridame" style="display:none;">you've selected a wrong mixer...</span><br>
-    <span id="shakedame" style="display:none;">you've shaked too much or too few...</span><br>
+    <span id="shakedame" style="display:none;">you've shaken too much or too few...</span><br>
     <span id="alldame" style="display:none;">A wrong mixer and shaking...</span><br>
     <a href="../index.html"><div class="button">Top</div></a><br><br>
     <a href="../game/select.html"><div class="button">Back to Stage Select</div></a>
