@@ -29,9 +29,17 @@ body {
 .day {
 	font-size:20vw;
 	color:#fff;
-	border: whitev solid 1px;
+	border: white solid 1px;
 	text-decoration: none;
 }
+
+.tour {
+	font-size:20vw;
+	color: yellow;
+	border: white solid 1px;
+	text-decoration: none;
+}
+
 
 a {
 	text-decoration: none;
@@ -158,6 +166,7 @@ span {
 
 .button {
 	border: white solid 1px;
+	color: white;
 }
 
 .debug{
@@ -180,7 +189,7 @@ span {
 }
 
 .countdown{
-     font-size: 200%;
+     font-size: 150px;
      color: white;
 }
 
@@ -195,9 +204,14 @@ span {
 	font-family: 'VT323',monospace;
 }
 
-.hint {
+.split {
+	visibility: hidden;
 	color: white;
 	font-family: 'VT323',monospace;
+}
+
+.textSplitLoad{
+	display: none;
 }
 
 /*comp*/
@@ -246,3 +260,6 @@ span {
     text-align: center;
     color: white;
     }
+    
+
+
