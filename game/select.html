@@ -15,15 +15,16 @@
 		var day2 = localStorage.getItem("openday2");
 		var day3 = localStorage.getItem("openday3");
 		var day4 = localStorage.getItem("openday4");
+		
+		var tour1 = localStorage.getItem("opentour");
+
 		var day5 = localStorage.getItem("openday5");
 		var day6 = localStorage.getItem("openday6");
 		var day7 = localStorage.getItem("openday7");
 		var day8 = localStorage.getItem("openday8");
 		var day9 = localStorage.getItem("openday9");
 
-
-		var tour1 = localStorage.getItem("opentaikai1");
-		var tour2 = localStorage.getItem("opentaikai2");
+		var tour2 = localStorage.getItem("opentour2");
 
 	    $(document).ready(function () {
 	   
@@ -36,6 +37,11 @@
 		    if(day4 != null){
 		        $("#day4").show();
 		    }
+		    
+		    if(tour1 != null){
+		        $("#tour1").show();
+		    }
+		    
 		    if(day5 != null){
 		        $("#day5").show();
 		    }
@@ -51,9 +57,7 @@
 		    if(day9 != null){
 		        $("#day9").show();
 		    }
-		    if(tour1 != null){
-		        $("#tour1").show();
-		    }
+		    
 		    if(tour2 != null){
 		        $("#tour2").show();
 		    }
@@ -90,11 +94,11 @@
 	    }
 	
 	    function tourlink(){
-	    	window.location.href =　"tour/tour1.html"
+	    	window.location.href =　tour1;
 	    }    
 	
 	    function tour2link(){
-	    	window.location.href =　"taikaishake/taikai2.html"
+	    	window.location.href =　tour2;
 	    }    
 	
 	    function kesi(){
@@ -112,7 +116,7 @@
 
     <div id="day3" class="day" onclick="day3link()" style="display:none">DAY3</div>
 
-    <div id="tour" class="tour" onclick="tourlink()" style="display:none">TOURNAMENT</div>
+    <div id="tour1" class="tour" onclick="tourlink()" style="display:none">TOURNAMENT</div>
 
     <div id="day4" class="day" onclick="day4link()" style="display:none">DAY4</div>
 
@@ -120,7 +124,7 @@
 
     <div id="day6" class="day" onclick="day6link()" style="display:none">DAY6</div>
     
-    <div id="tour2" class="tour" conclick="tour22link()" style="display:none">TOURNAMENT2</div>
+    <div id="tour2" class="tour" conclick="tour2link()" style="display:none">TOURNAMENT2</div>
     
     <div id="day7" class="day" onclick="day7link()" style="display:none">DAY7</div>
     
