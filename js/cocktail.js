@@ -1,10 +1,3 @@
-
-$(function() {
-  // 2button／buttonsetメソッドでボタンに整形
-  $('button').button();
-  $('.button').button();
-});
-
 var prize = {
 	day1: 300,
 	day2: 400,
@@ -43,7 +36,7 @@ function day2open(){ // day1
     
 function day3open(){ // day2
 // ローカルストレージに保存する
-        var day3cookie = 'day/day3.html';
+        var day3cookie = 'day3/day3.html';
 
         localStorage.setItem("openday3", day3cookie); // ステージ4を解禁
         var kahluamilk = "cocktail/kahluamilk.html";
@@ -70,7 +63,7 @@ function day4open(){ // day3 = taikai1 day4の解禁
         var day4cookie = 'day4/day4.html'; // day4の解禁
         localStorage.setItem("openday4", day4cookie); 
     
-        var tourcookie = 'tour/tour.html' // taikai1の解禁
+        var tourcookie = 'tour/tour1.html';// taikai1の解禁
         localStorage.setItem("opentour",tourcookie);
     
         var screwdriver = "cocktail/screwdriver.html";
@@ -171,7 +164,7 @@ function day8open(){
         alert("コレクションに“ブラックデビル”が追加されました！")
 }
 
-function stage9open(){
+function day9open(){
 // ローカルストレージに保存する
         var day8cookie = 'day9/day9.html';
 
