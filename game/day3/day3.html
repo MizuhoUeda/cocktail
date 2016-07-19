@@ -6,26 +6,39 @@
 
     <title>Cocktail Master</title>
     <link rel="stylesheet" href="../../css/style.css" type="text/css">
-    <link rel="stylesheet" href="../../css/sp.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><!-- jqueryセット -->
     <link href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" rel="stylesheet" type="text/css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="../../js/jquery.split.js" type="text/javascript"></script>
     <script type="text/javascript">
-		$(function() {
-		// 2button／buttonsetメソッドでボタンに整形
-			$('button').button();
-    	});
+	    $(window).load(function(){
+		   // 判定閾値
+		   var max = 5;
+		   var min = 30;
+		 
+		   localStorage.setItem("max",max);
+		   localStorage.setItem("min",min);
+		   
+		   //判定初期化
+		   localStorage.removeItem("drink");
+		   localStorage.removeItem("goodjudge");
+		    
+	    });
     </script>
+
 </head>
 
 <body>
-    <a href="s3osake.html"><img src="../../img/mosbar.png" width="320px" height="auto"></a><br>
+   <img src="../../img/mrbarten.png"><br>
 
-    <div class="shousai">
-        <h2 id="konkai">今回作るカクテルは...</h2>
+     <a href="s3osake.html">
+	    <div class="shousai">
+        	<h2 class="quest">Make this cocktail...</h2>
 
-        <p>ロシア原産のお酒をベースとしたフルーティーなカクテル<br></p>
-    </div>
+			<p class="split">Fruity ,sweet cocktails with a low alcohol content.<br>
+				This cocktail is also recommended for people who drink for the first time liquor</p>
+     	</div>
+    </a>
 </body>
 </html>

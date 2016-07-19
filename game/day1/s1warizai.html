@@ -13,18 +13,18 @@
 
     <script type="text/javascript">
 		var judge = localStorage.getItem("goodjudge");
-		var drink = "cassisorange.html";
+		var drink = "day1/cassisorange.html";
 
 		function goodchoice(){
 			if(judge != null){
 				localStorage.setItem("drink",drink);
-				window.location.href = "shake.html";
+				window.location.href = "../shake.html";
     	}else{
-				window.location.href = "shake.html";
+				window.location.href = "../shake.html";
     		}
     	}
 		function badchoice(){
-			window.location.href = "shake.html";
+			window.location.href = "../shake.html";
     	}
     </script>
 </head>

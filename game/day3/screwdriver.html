@@ -4,78 +4,66 @@
 <head>
     <title>カクテルメーカー</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href='../../css/style.css' type="text/css">
     <link rel='stylesheet' href='../../css/sp.css' type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><!-- jqueryセット -->
     <link href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" rel="stylesheet" type="text/css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js" type="text/javascript"></script>
     <script src="../../js/cocktail.js" type="text/javascript"></script>
-    <link rel="stylesheet" type="text/css" href="../../css/default.css">
-    <link rel="stylesheet" type="text/css" href="../../css/component.css">
     
-    <script type="text/javascript">
+</head>
+
+   	<script type="text/javascript">
 		$(document).ready(function(){ // ページを更新されてポイント受け取りされることへの対策
         	var received = localStorage.getItem("received4");
 			if(received != null){
-			$("#point").css("display", "none");
+				$('#point').css('display', 'none');
 			}
     	});    
-
-	</script>
-	
-</head>
+    </script>
+    
 
 <body>
     <!-- contents -->
 
     <div class="main">
-        <script src="../../js/modernizr.custom.js" type="text/javascript"></script>
-
-        <div class="container">
-            <!-- Codrops top bar -->
-
-            <div class="os-phrases" id="os-phrases">
-                <h2>完 成</h2>
-            </div>
-        </div><!-- /container -->
-        <script src="../../js/jquery.lettering.js" type="text/javascript"></script> <!-- 完成画面 -->
-
-        <div><img id="shakeimg" src="../../img/screwdriver.png" width="320px" height="450px"></div>
+	            
+         <!-- 完成画面 -->
+		<h1 class="cong">CONGRATULATIONS!!</h1>
+        <div class="center"><img id="shakeimg" src="../../img/cocktail/screwdriver.png"></div>
 
         <div class="shousai">
-            <h2 style="color:orange;">スクリュードライバー</h2>
+            <h2 class= "ans">Screwdriver</h2>
 
-            <h3>・材料</h3>
+            <h3 class="ing">-Ingredients-</h3>
 
             <ul>
-                <li class="resipi">ウォッカ 30ml</li>
+                <li class="resipe">Vodka 30ml</li>
 
-                <li class="resipi">オレンジジュース　120ml</li>
+                <li class="resipe">orangejuice 120ml</li>
 
-                <li style="list-style: none; display: inline">
-                    <h3>・作り方</h3>
+                <li class="resipe">
+                <h3 class="res">-recipe-</h3>
 
                     <ol>
-                        <li>氷を入れたロック・グラスに注ぎ、軽くステアする。</li>
-                    </ol>
+                        <li>Pour the Vodka in a tall glass of ice.</li>
 
-                    <p>口当たりが優しく飲みやすいカクテル</p>
+                        <li>Pour the OrangeJuice</li>
+                        
+                        <li>Stir.</li>
+                    </ol>
                 </li>
             </ul>
         </div>
 
         <div>
             <span id="output"></span><br>
-            <button onclick="stage4open()" id="point">報酬を受け取る</button><br>
+            <p onclick="day4open()" id="point" class="button">Reward</p>
+            
+            <a href="../select.html" class="button">STAGE</a><
             <br>
-            <a href="../../correction/correction.html" class="button">今まで作ったカクテルは<br>
-            ここから！</a><br>
-            <br>
-            <a href="../../correction/buy.html" class="button">新しいカクテルを解禁！</a><br>
-            <br>
-            <a href="../select.html" class="button">ステージ選択に戻る</a><br>
-            <br>
-            <a href="../../index.html" class="button">TOPに戻る</a>
+            <a href="../../index.html" class="button">TOP</a>
         </div>
     </div>
 </body>
